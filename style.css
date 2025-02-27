@@ -1,0 +1,204 @@
+.header {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 5px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.content {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 7px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+body {
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+hr {
+    background-color: black;
+    height: 5px;
+    border: none;
+}
+
+#navlist {
+    position: sticky;
+    top: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#navlist>li {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 5px 5px;
+}
+
+#navlist>li a {
+    display: block;
+    text-align: center;
+    padding: 14px 5px;
+    color: white;
+    font-size: 20px;
+}
+
+#navlist>li a:hover {
+    background-color: #EEE;
+}
+
+[class*="block"] {
+    position: absolute;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    bottom: -1000px;
+}
+
+div.tetris {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+div.frame {
+    position: relative;
+    background-image: url('images/tetris/frame.png');
+    background-color: rgb(0, 0, 72);
+    bottom: 0;
+    right: 0;
+    width: 180px;
+    height: 320px;
+}
+
+.iblock {
+    transform: rotate(90deg);
+    animation-name: iblock;
+    animation-delay: 3s;
+}
+
+.oblock {
+    animation-name: oblock;
+    animation-delay: 6s;
+
+}
+
+.jblock {
+    animation-name: jblock;
+    animation-delay: 9s;
+}
+
+.tblock {
+    transform: rotate(270deg);
+    animation-name: tblock;
+    animation-delay: 12s;
+}
+
+.zblock {
+    animation-name: zblock;
+    animation-duration: 2s;
+    animation-delay: 15s;
+}
+
+.sblock {
+    animation-name: sblock;
+    animation-delay: 17s;
+}
+
+.lblock {
+    transform: rotate(270deg);
+    animation-name: lblock;
+    animation-duration: 2s;
+    animation-delay: 20s;
+}
+
+@keyframes iblock {
+    0% {
+        left: 86px;
+        top: -167px;
+    }
+
+    100% {
+        top: 93px;
+        left: 86px;
+    }
+}
+
+@keyframes oblock {
+    0% {
+        top: -149px;
+        left: 24px;
+    }
+
+    100% {
+        top: 71px;
+        left: 24px;
+    }
+}
+
+@keyframes jblock {
+    0% {
+        left: -16px;
+        top: -118px;
+    }
+
+    100% {
+        left: -16px;
+        top: 82px;
+    }
+}
+
+@keyframes tblock {
+    0% {
+        left: 44px;
+        top: -85px;
+    }
+
+    100% {
+        left: 44px;
+        top: 75px;
+    }
+}
+
+@keyframes zblock {
+    0% {
+        left: 30px;
+        top: -79px;
+    }
+
+    100% {
+        left: 30px;
+        top: 20px;
+    }
+}
+
+@keyframes sblock {
+    0% {
+        left: 87px;
+        top: -202px;
+    }
+
+    100% {
+        left: 87px;
+        top: -42px;
+    }
+}
+
+@keyframes lblock {
+    0% {
+        left: 130px;
+        top: -131px;
+    }
+
+    100% {
+        left: 130px;
+        top: -31px;
+    }
+}
